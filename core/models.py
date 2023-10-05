@@ -41,12 +41,11 @@ class Client(models.Model):
 
     def __str__(self):
         return self.name
-
-
-class Contact(models.Model):
-    name = models.CharField(max_length=250,null=True)
-    email = models.EmailField()
-    mssage = models.TextField()
     
-    def __str__(self) -> str:
-        return f"{self.name}-{self.email}"
+    
+class Contact(models.Model):
+    name = models.CharField(max_length=100,null=True)
+    email=models.EmailField(null=True)
+    message = models.TextField(null=True)
+    def __str__(self):
+        return self.name

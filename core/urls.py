@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import HomeTemplateView,ContactView
+from .views import HomeTemplateView,saveEnquiry
 
 urlpatterns = [
     path('', HomeTemplateView.as_view()),
-    path('',ContactView),
+    path('save_enquiry/', saveEnquiry,name='' ),
 ]
