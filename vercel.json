@@ -16,7 +16,9 @@
             "dest": "portfolio/wsgi.py"
         }
     ],
-    "env": {
-        "DJANGO_SETTINGS_MODULE": "portfolio.settings"
-    }
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "portfolio.settings",
+    "DATABASE_URL": "sqlite:///db.sqlite3",
+    "SECRET_KEY": "superuser"
+}
 }

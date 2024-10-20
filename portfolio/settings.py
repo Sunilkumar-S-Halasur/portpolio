@@ -122,3 +122,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+import os
+
+settings_module = os.getenv('DJANGO_SETTINGS_MODULE')
+database_url = os.getenv('DATABASE_URL')
+secret_key = os.getenv('SECRET_KEY')
