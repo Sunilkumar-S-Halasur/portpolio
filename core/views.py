@@ -46,3 +46,5 @@ def saveEnquiry(request):
         #     return render(request, "home.html")
         except ValidationError as e:
             return HttpResponse("Error saving data to the database.")
+    else:
+        return HttpResponse("Invalid request method.")
